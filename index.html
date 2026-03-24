@@ -8,6 +8,32 @@
 <button onclick="showPage('transactions')">Transactions</button>
 <button onclick="showPage('chatbot')">Chatbot</button>
 </div>
+<!-- LOGIN PAGE -->
+<div id="loginPage">
+
+<h2 style="text-align:center;">Login to FINOVA</h2>
+
+<div style="text-align:center;">
+<input type="text" id="username" placeholder="Enter Username"><br><br>
+<input type="password" id="password" placeholder="Enter Password"><br><br>
+
+<button onclick="login()">Login</button>
+</div>
+
+</div>
+<!-- MAIN APP (hidden initially) -->
+<div id="mainApp" style="display:none;">
+
+<div class="header">
+<h1>FINOVA</h1>
+<p>AI Financial Coach</p>
+</div>
+
+<div class="menu">
+<button onclick="showPage('dashboard')">Dashboard</button>
+<button onclick="showPage('transactions')">Transactions</button>
+<button onclick="showPage('chatbot')">Chatbot</button>
+</div>
 
 <!-- DASHBOARD -->
 <div id="dashboard" class="page">

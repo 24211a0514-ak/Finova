@@ -8,6 +8,22 @@ page.style.display = "none";
 
 document.getElementById(pageId).style.display = "block";
 }
+function login(){
+
+let user = document.getElementById("username").value;
+let pass = document.getElementById("password").value;
+
+if(user === "admin" && pass === "1234"){
+
+document.getElementById("loginPage").style.display = "none";
+document.getElementById("mainApp").style.display = "block";
+
+}
+else{
+alert("Invalid login credentials");
+}
+
+}
 
 
 // CHATBOT FUNCTION
