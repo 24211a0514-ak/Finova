@@ -1,31 +1,57 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>FINOVA</title>
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
 <div class="header">
 <h1>FINOVA</h1>
-<p>Your AI Financial Assistant</p>
+<p>AI Financial Coach</p>
 </div>
 
 <div class="menu">
-<button>Dashboard</button>
-<button>Transactions</button>
-<button>Chatbot</button>
+<button onclick="showPage('dashboard')">Dashboard</button>
+<button onclick="showPage('transactions')">Transactions</button>
+<button onclick="showPage('chatbot')">Chatbot</button>
 </div>
 
+<!-- DASHBOARD -->
+<div id="dashboard" class="page">
+<div class="dashboard">
+<div class="card">
+<h3>Income</h3>
+<p>₹50,000</p>
+</div>
+
+<div class="card">
+<h3>Expenses</h3>
+<p>₹32,000</p>
+</div>
+
+<div class="card">
+<h3>Balance</h3>
+<p>₹18,000</p>
+</div>
+</div>
+
+<div class="insights">
+<h2>Smart Insights</h2>
+<p id="insightText"></p>
+</div>
+</div>
+
+<!-- TRANSACTIONS -->
+<div id="transactions" class="page" style="display:none;">
+<h2>Transactions</h2>
+<ul>
+<li>Food - ₹500</li>
+<li>Rent - ₹2000</li>
+<li>Travel - ₹800</li>
+<li>Subscriptions - ₹300</li>
+</ul>
+</div>
+
+<!-- CHATBOT -->
+<div id="chatbot" class="page" style="display:none;">
 <div class="chat-container">
 <div id="chatBox" class="chat-box"></div>
-
-<input type="text" id="userInput" placeholder="Ask something...">
+<input type="text" id="userInput" placeholder="Ask financial advice...">
 <button onclick="sendMessage()">Send</button>
+</div>
 </div>
 
 <script src="script.js"></script>
-
-</body>
-</html>
