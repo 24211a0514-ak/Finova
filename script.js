@@ -56,5 +56,31 @@ insight = "✅ Spending is under control";
 }
 
 document.getElementById("insightText").innerText = insight;
+// 📊 PIE CHART
+let pieCtx = document.getElementById("pieChart");
 
+new Chart(pieCtx, {
+type: 'pie',
+data: {
+labels: ['Food', 'Rent', 'Travel', 'Subscriptions'],
+datasets: [{
+data: [5000, 15000, 7000, 5000]
+}]
+}
+});
+
+
+// 📈 BAR CHART
+let barCtx = document.getElementById("barChart");
+
+new Chart(barCtx, {
+type: 'bar',
+data: {
+labels: ['Week1', 'Week2', 'Week3', 'Week4'],
+datasets: [{
+label: 'Expenses',
+data: [8000, 9000, 7000, 8000]
+}]
+}
+});
 }
